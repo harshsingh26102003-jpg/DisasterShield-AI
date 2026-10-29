@@ -1,0 +1,116 @@
+
+Indian_Climate_Dataset_2024_2025(20260919-031130).csv: 7310 rows x 13 columns
+      Date      City       State  Temperature_Max (°C)  Temperature_Min (°C)  Temperature_Avg (°C)  Humidity (%)  Rainfall (mm)  Wind_Speed (km/h)  AQI AQI_Category  Pressure (hPa)  Cloud_Cover (%)
+2024-01-01    Mumbai Maharashtra                  32.5                  18.0                  25.2          77.6            0.0                3.3  259         Poor          1020.3             62.1
+2024-01-01     Delhi       Delhi                  25.4                  10.7                  18.1          84.1            0.0                9.0  130     Moderate          1008.4             46.0
+2024-01-01 Bengaluru   Karnataka                  37.2                  30.8                  34.0          49.0            3.7                6.6   54 Satisfactory          1008.0             61.3
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 7310 entries, 0 to 7309
+Data columns (total 13 columns):
+ #   Column                Non-Null Count  Dtype  
+---  ------                --------------  -----  
+ 0   Date                  7310 non-null   object 
+ 1   City                  7310 non-null   object 
+ 2   State                 7310 non-null   object 
+ 3   Temperature_Max (°C)  7310 non-null   float64
+ 4   Temperature_Min (°C)  7310 non-null   float64
+ 5   Temperature_Avg (°C)  7310 non-null   float64
+ 6   Humidity (%)          7310 non-null   float64
+ 7   Rainfall (mm)         7310 non-null   float64
+ 8   Wind_Speed (km/h)     7310 non-null   float64
+ 9   AQI                   7310 non-null   int64  
+ 10  AQI_Category          7310 non-null   object 
+ 11  Pressure (hPa)        7310 non-null   float64
+ 12  Cloud_Cover (%)       7310 non-null   float64
+dtypes: float64(8), int64(1), object(4)
+memory usage: 742.6+ KB
+None
+Missing cells: 0 Duplicates: 0
+
+rainfall_districtwise_daily_imd.csv: 51648 rows x 22 columns
+            State District       Date  Daily Actual  Daily Normal Daily Departure Per Daily Category                Week Date  Weekly \nActual  Weekly Normal Weekly Departure Per Weekly Category Cumulative Date  Cumulative Actual  Cumulative Normal Cumulative Departue Per Cumulative \nCategory                    Monthly Date  Monthly Acutual  Monthly Normal Monthly \nDeparture Per Monthly Category
+ANDAMAN & NICOBAR  NICOBAR 2026-08-19           0.5           7.4                -94%             LD 13-08-2026 To 19-08-2026              0.5            7.4                 -94%              LD      2026-06-01              431.7              686.9                    -37%                     D From 01-08-2026 To 19-08-2026\r            186.1           141.5                     31%                E
+ANDAMAN & NICOBAR  NICOBAR 2026-08-20           0.5           9.4                -94%             LD 13-08-2026 To 19-08-2026             17.5           45.2                 -61%              LD      2026-06-01              432.3              696.3                    -38%                     D From 01-08-2026 To 20-08-2026\r            186.6           150.9                     24%                E
+ANDAMAN & NICOBAR  NICOBAR 2026-08-21           2.4           9.9                -76%             LD 13-08-2026 To 19-08-2026             17.5           45.2                 -61%              LD      2026-06-01              431.7              686.9                    -37%                     D From 01-08-2026 To 21-08-2026\r            189.0           160.8                     18%                N
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 51648 entries, 0 to 51647
+Data columns (total 22 columns):
+ #   Column                   Non-Null Count  Dtype  
+---  ------                   --------------  -----  
+ 0   State                    51648 non-null  object 
+ 1   District                 51648 non-null  object 
+ 2   Date                     51648 non-null  object 
+ 3   Daily Actual             51648 non-null  float64
+ 4   Daily Normal             51648 non-null  float64
+ 5   Daily Departure Per      51061 non-null  object 
+ 6   Daily Category           51648 non-null  object 
+ 7   Week Date                51648 non-null  object 
+ 8   Weekly 
+Actual           51648 non-null  float64
+ 9   Weekly Normal            51648 non-null  float64
+ 10  Weekly Departure Per     51183 non-null  object 
+ 11  Weekly Category          51648 non-null  object 
+ 12  Cumulative Date          51648 non-null  object 
+ 13  Cumulative Actual        51648 non-null  float64
+ 14  Cumulative Normal        51648 non-null  float64
+ 15  Cumulative Departue Per  51312 non-null  object 
+ 16  Cumulative 
+Category     51648 non-null  object 
+ 17  Monthly Date             51648 non-null  object 
+ 18  Monthly Acutual          51648 non-null  float64
+ 19  Monthly Normal           51648 non-null  float64
+ 20  Monthly 
+Departure Per   51307 non-null  object 
+ 21  Monthly Category         51648 non-null  object 
+dtypes: float64(8), object(14)
+memory usage: 8.7+ MB
+None
+Missing cells: 1729 Duplicates: 0
+
+rainfall_statewise_daily_imd.csv: 2841 rows x 21 columns
+                 State       Date  Daily Actual  Daily Normal Daily Departure Per Daily Category                Week Date  Weekly Actual  Weekly \nNormal Weekly Departure Per Weekly Category          Cumulative Date  Cumulative \nActual  Cumulative Normal Cumulative Departue Per Cumulative Category                    Monthly Date  Monthly Acutual  Monthly Normal Monthly Departure Per Monthly Category
+ANDAMAN & NICOBAR (UT) 2026-08-19           4.1          12.9                -68%             LD 13-08-2026 To 19-08-2026           41.5             77.3                 -46%               D 01-06-2026 To 19-08-2026               1062.7             1038.7                      2%                 N\r From 01-08-2026 To 19-08-2026\r            238.1           234.1                    2%              N\r
+ANDAMAN & NICOBAR (UT) 2026-08-20          23.5          11.9                 97%             LE 13-08-2026 To 19-08-2026           41.5             77.3                 -46%               D 01-06-2026 To 20-08-2026               1086.2             1050.6                      3%                 N\r From 01-08-2026 To 20-08-2026\r            261.6           246.0                    6%              N\r
+ANDAMAN & NICOBAR (UT) 2026-08-21          30.7          12.4                148%             LE 13-08-2026 To 19-08-2026           41.5             77.3                 -46%               D 01-06-2026 To 21-08-2026               1116.9             1063.0                      5%                 N\r From 01-08-2026 To 21-08-2026\r            292.3           258.4                   13%              N\r
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 2841 entries, 0 to 2840
+Data columns (total 21 columns):
+ #   Column                   Non-Null Count  Dtype  
+---  ------                   --------------  -----  
+ 0   State                    2841 non-null   object 
+ 1   Date                     2841 non-null   object 
+ 2   Daily Actual             2841 non-null   float64
+ 3   Daily Normal             2841 non-null   float64
+ 4   Daily Departure Per      2628 non-null   object 
+ 5   Daily Category           2557 non-null   object 
+ 6   Week Date                2841 non-null   object 
+ 7   Weekly Actual            2841 non-null   float64
+ 8   Weekly 
+Normal           2841 non-null   float64
+ 9   Weekly Departure Per     2557 non-null   object 
+ 10  Weekly Category          2557 non-null   object 
+ 11  Cumulative Date          2841 non-null   object 
+ 12  Cumulative 
+Actual       2841 non-null   float64
+ 13  Cumulative Normal        2841 non-null   float64
+ 14  Cumulative Departue Per  2628 non-null   object 
+ 15  Cumulative Category      2557 non-null   object 
+ 16  Monthly Date             2841 non-null   object 
+ 17  Monthly Acutual          2841 non-null   float64
+ 18  Monthly Normal           2841 non-null   float64
+ 19  Monthly Departure Per    2628 non-null   object 
+ 20  Monthly Category         2557 non-null   object 
+dtypes: float64(8), object(13)
+memory usage: 466.2+ KB
+None
+Missing cells: 2059 Duplicates: 0
+Dummy Baseline {'model': 'Dummy Baseline', 'accuracy': 0.326265389876881, 'precision_macro': 0.06525307797537619, 'recall_macro': 0.2, 'f1_macro': 0.09840123775141826, 'log_loss': 24.283856763529684, 'roc_auc_ovr_macro': 0.5, 'best_parameters': '{}'}
+Logistic Regression {'model': 'Logistic Regression', 'accuracy': 0.33105335157318744, 'precision_macro': 0.13180025294671371, 'recall_macro': 0.20432965451270152, 'f1_macro': 0.15927350844644078, 'log_loss': 1.4364207366391393, 'roc_auc_ovr_macro': 0.4990014787198307, 'best_parameters': '{}'}
+KNN {'model': 'KNN', 'accuracy': 0.27291381668946646, 'precision_macro': 0.21123019600588827, 'recall_macro': 0.2088459600732433, 'f1_macro': 0.19355087370846372, 'log_loss': 15.488219540048757, 'roc_auc_ovr_macro': 0.5140135519616419, 'best_parameters': '{"model__n_neighbors": 3}'}
+Decision Tree {'model': 'Decision Tree', 'accuracy': 0.25786593707250344, 'precision_macro': 0.19973336653222268, 'recall_macro': 0.20050838798080672, 'f1_macro': 0.1997011548657221, 'log_loss': 26.749222932415936, 'roc_auc_ovr_macro': 0.5003639705548373, 'best_parameters': '{"model__max_depth": null, "model__min_samples_leaf": 1}'}
+Naive Bayes {'model': 'Naive Bayes', 'accuracy': 0.2421340629274966, 'precision_macro': 0.1971512564853775, 'recall_macro': 0.19333259031078529, 'f1_macro': 0.1896781657407416, 'log_loss': 1.8123033932457697, 'roc_auc_ovr_macro': 0.49830672219944405, 'best_parameters': '{}'}
+SVM {'model': 'SVM', 'accuracy': 0.3112175102599179, 'precision_macro': 0.1891146731899011, 'recall_macro': 0.1976217666249241, 'f1_macro': 0.16952844327909947, 'best_parameters': '{"model__C": 5, "model__gamma": "scale"}'}
+Best model by macro-F1: {'model': 'Decision Tree', 'accuracy': 0.25786593707250344, 'precision_macro': 0.19973336653222268, 'recall_macro': 0.20050838798080672, 'f1_macro': 0.1997011548657221, 'log_loss': 26.749222932415936, 'roc_auc_ovr_macro': 0.5003639705548373, 'best_parameters': '{"model__max_depth": null, "model__min_samples_leaf": 1}'}
+districtwise clean rows: 51648 ; risk bins are exploratory, not flood labels.
+statewise clean rows: 2841 ; risk bins are exploratory, not flood labels.
+Finished. See outputs/eda and outputs/models. Capture genuine screenshots of your own run.
